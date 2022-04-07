@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Probe_Yes,License_Agree,DBinputsValid_Yes,DummyData_No,Storage_File,Password_Mismatch">
+    <listeners>
+        <listener class-name="commontests.Listeners" />
+    </listeners>
+    <test name="Install_Invalid_0006" preserve-order="true">
+        <parameter name = "dbName" value="adminpasswordmismatch"/>
+        <classes>
+            <class name="installationtests.InstallationViaGuiTest">
+                <methods>
+                    <include name="probePageCheck" />
+                    <include name="licensePageCheck" />
+                    <include name="dbSetUpPageGetTitleTest" />
+                    <include name="givingDbSetUpAndContinuingWithOutDummyData" />
+                    <include name="dbSetUpConfirmationPage" />
+                    <include name="gettingStartedPageGetTitleTest" />
+                    <include name="enteringAdminDetailsWithMismatchPasswordAndSystemStorageInGettingStartedPage" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

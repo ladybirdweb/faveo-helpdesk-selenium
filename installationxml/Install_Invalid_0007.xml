@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Probe_Yes,License_Agree,DBinputs_Invalid_DBName">
+    <listeners>
+        <listener class-name="commontests.Listeners" />
+    </listeners>
+    <test name="Install_Invalid_0007" preserve-order="true">
+        <parameter name = "dbNameDuplicate" value="team"/>
+        <classes>
+            <class name="installationtests.InstallationViaGuiTest">
+                <methods>
+                    <include name="probePageCheck" />
+                    <include name="licensePageCheck" />
+                    <include name="agreeingLicenseAgreementTest" />
+                    <include name="dbSetUpPageGetTitleTest" />
+                    <include name="givingInvalidDbNameAndContinuingWithOutDummyData" />
+                    <include name="dbSetUpConfirmationPage" />
+                    <include name="gettingStartedPageGetTitleTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
