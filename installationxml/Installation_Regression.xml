@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="MultipleSuite">
     <suite-files>
-        <suite-file path="Install_Invalid_0012.xml"></suite-file>
-        <suite-file path="Install_Invalid_0011.xml"></suite-file>
-        <suite-file path="Install_Invalid_0010.xml"></suite-file>
-        <suite-file path="Install_Invalid_0009.xml"></suite-file>
-        <suite-file path="Install_Invalid_0008.xml"></suite-file>
         <suite-file path="Install_Invalid_0007.xml"></suite-file>
+        <suite-file path="Install_Invalid_0008.xml"></suite-file>
+        <suite-file path="Install_Invalid_0009.xml"></suite-file>
+        <suite-file path="Install_Invalid_0011.xml"></suite-file>
+        <suite-file path="Install_Invalid_0012.xml"></suite-file>
+        <suite-file path="Install_Invalid_0010.xml"></suite-file>
     </suite-files>
 </suite>

@@ -5,7 +5,7 @@
         <listener class-name="commontests.Listeners" />
     </listeners>
     <test name="Install_Invalid_0007" preserve-order="true">
-        <parameter name = "dbNameDuplicate" value="team"/>
+        <parameter name = "dbNameDuplicate" value="newimap"/>
         <classes>
             <class name="installationtests.InstallationViaGuiTest">
                 <methods>

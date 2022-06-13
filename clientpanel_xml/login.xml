@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LOGIN">
+    <listeners>
+        <listener class-name="commontests.Listeners"/>
+    </listeners>
+
+    <test name="Admin_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="testadmin"/>
+                    <parameter name="password" value="testpass"/>
+                    <include name="login"/>
+                    <include name="adminLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Admin_ValidEmail_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="kvb422@gmail.com"/>
+                    <parameter name="password" value="testpass"/>
+                    <include name="login"/>
+                    <include name="adminLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Agent_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="DepA_TeamA3"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="agentLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OrganizationManager_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="vk"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="OrganizationManagerUserLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OrganizationMember_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="bindu1122"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="OrganizationMemeberUserLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UnverifiedAdmin_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="unverifiedadmin"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="unverifiedUserLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DeactivatedAdmin_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="deactivatedadmin"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="deactivatedUserLoginCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Admin_InvalidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="invalidusername"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Admin_ValidUsername_InvalidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="testadmin"/>
+                    <parameter name="password" value="invalidpassword"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Admin_InvalidUsername_InvalidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="invalidusername"/>
+                    <parameter name="password" value="invalidpassword"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Agent_ValidUsername_InvalidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="DepA_TeamA3"/>
+                    <parameter name="password" value="invalidpassword"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OrganizationManager_InvalidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="invalidusername"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OrganizationMember_InvalidUsername_InvalidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="invalidusername"/>
+                    <parameter name="password" value="invalidpassword"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DeletedUser_ValidUsername_ValidPassword">
+
+        <classes>
+            <class name="clientpaneltests.LoginTest">
+                <methods>
+                    <parameter name="userName" value="deleteduser"/>
+                    <parameter name="password" value="test123!"/>
+                    <include name="login"/>
+                    <include name="invalidLoginDetailsCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="REGISTERFROMHOMEPAGE">
+    <listeners>
+        <listener class-name="commontests.Listeners"/>
+    </listeners>
+
+    <test name="With DEFAULT as well as MANDATORY FIELDS">
+        <classes>
+            <class name="clientpaneltests.ClientPanelRegisterTest">
+                <methods>
+                    <include name="registerWithDefaultFieldsAndMandatory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="With DEFAULT as well as NON MANDATORY FIELDS">
+        <classes>
+            <class name="clientpaneltests.ClientPanelRegisterTest">
+                <methods>
+                    <include name="registerWithDefaultFieldsAlongNonMandatory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="With Custom fields">
+        <classes>
+            <class name="clientpaneltests.ClientPanelRegisterTest">
+                <methods>
+                    <include name="registerWithDefaultFieldsAlongCustomFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="With Organization and Organization Department">
+        <classes>
+            <class name="clientpaneltests.ClientPanelRegisterTest">
+                <methods>
+                    <include name="registerWithDefaultFieldsAlongCustomFieldsAndOrganization"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Null in mandatory fields">
+        <classes>
+            <class name="clientpaneltests.ClientPanelRegisterTest">
+                <methods>
+                    <include name="registerWithDefaultFieldsAsNull"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Wrong input in mandatory fields(workphone)">
+        <classes>
+            <class name="clientpaneltests.ClientPanelRegisterTest">
+                <methods>
+                    <include name="registerWithWrongInputInWorkPhone"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
