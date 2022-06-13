@@ -1,0 +1,6 @@
+installationpages/InstallationBasePage.class
+clientpanelpages/ClientPanelRegisterPage.class
+resources/ExtentReporterNG.class
+clientpanelpages/LoginAndForgotPasswordPage.class
+resources/Base.class
+clientpanelpages/ClientChangePasswordFromProfilePage.class

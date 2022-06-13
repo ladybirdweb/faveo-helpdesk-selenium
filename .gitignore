@@ -1,3 +1,7 @@
 .idea/
 .settings/
 data/
+htmlreports/
+logs/
+screenshots/
+testng.xml
