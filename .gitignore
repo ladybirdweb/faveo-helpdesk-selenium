@@ -1,7 +1,3 @@
-logs
-data
-target
-screenshots
-htmlreports
-lib
-.idea
+.idea/
+.settings/
+data/
