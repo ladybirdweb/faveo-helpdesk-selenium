@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Probe_Yes,License_Agree,DBinputsValid_Yes,DummyData_No,Storage_S3,LicenseCode_Valid">
+    <listeners>
+        <listener class-name="commontests.Listeners" />
+    </listeners>
+    <test name="Install_Valid_0004" preserve-order="true">
+        <parameter name = "dbName" value="nodummy_s3"/>
+        <classes>
+            <class name="installationtests.InstallationViaGuiTest">
+                <methods>
+                    <include name="probePageCheck" />
+                    <include name="licensePageCheck" />
+                    <include name="dbSetUpPageGetTitleTest" />
+                    <include name="givingDbSetUpAndContinuingWithOutDummyData" />
+                    <include name="dbSetUpConfirmationPage" />
+                    <include name="gettingStartedPageGetTitleTest" />
+                    <include name="enteringAdminDetailsWithS3StorageInGettingStartedPage" />
+                    <include name="licenseCodePageGetTitleTest" />
+                    <include name="enteringValidLicenseCodeDetailsInGettingStartedPage" />
+                    <include name="finalPageGetTitleTest" />
+                    <include name="continueAndInstallationDone" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
