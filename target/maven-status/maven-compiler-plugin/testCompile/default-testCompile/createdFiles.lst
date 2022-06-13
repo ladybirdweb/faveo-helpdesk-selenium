@@ -1,0 +1,7 @@
+commontests/Listeners.class
+clientpaneltests/ChangePasswordOfClientTest.class
+clientpaneltests/LoginTest.class
+installationtests/InstallationViaGuiTest.class
+clientpaneltests/ForgotPasswordTest.class
+clientpaneltests/ClientPanelRegisterTest.class
+commontests/ExcelData.class
